@@ -1,3 +1,2 @@
 # WaterMe
-An iOS app to track water in take
-Test
+An iOS app to track water intake
