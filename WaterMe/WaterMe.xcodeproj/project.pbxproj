@@ -16,6 +16,8 @@
 		527284A82465F98F004E24AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 527284A62465F98F004E24AA /* LaunchScreen.storyboard */; };
 		527284B32465F98F004E24AA /* WaterMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527284B22465F98F004E24AA /* WaterMeTests.swift */; };
 		527284BE2465F98F004E24AA /* WaterMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527284BD2465F98F004E24AA /* WaterMeUITests.swift */; };
+		52E52B7F2469E08E00C49716 /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E52B7E2469E08E00C49716 /* home.storyboard */; };
+		52E52B812469E0A800C49716 /* charts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E52B802469E0A800C49716 /* charts.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		527284B92465F98F004E24AA /* WaterMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		527284BD2465F98F004E24AA /* WaterMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMeUITests.swift; sourceTree = "<group>"; };
 		527284BF2465F98F004E24AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E52B7E2469E08E00C49716 /* home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = home.storyboard; sourceTree = "<group>"; };
+		52E52B802469E0A800C49716 /* charts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = charts.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				527284A62465F98F004E24AA /* LaunchScreen.storyboard */,
 				527284A92465F98F004E24AA /* Info.plist */,
 				527284A12465F98E004E24AA /* WaterMe.xcdatamodeld */,
+				52E52B7E2469E08E00C49716 /* home.storyboard */,
+				52E52B802469E0A800C49716 /* charts.storyboard */,
 			);
 			path = WaterMe;
 			sourceTree = "<group>";
@@ -236,8 +242,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				527284A82465F98F004E24AA /* LaunchScreen.storyboard in Resources */,
+				52E52B812469E0A800C49716 /* charts.storyboard in Resources */,
 				527284A52465F98F004E24AA /* Assets.xcassets in Resources */,
 				527284A02465F98E004E24AA /* Main.storyboard in Resources */,
+				52E52B7F2469E08E00C49716 /* home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
