@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5225BCB4246B44460074C0BD /* WaterPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225BCB3246B44460074C0BD /* WaterPoint.swift */; };
+		5225BCB8246B542C0074C0BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225BCB7246B542C0074C0BD /* ViewController.swift */; };
 		527284992465F98E004E24AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527284982465F98E004E24AA /* AppDelegate.swift */; };
 		5272849B2465F98E004E24AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272849A2465F98E004E24AA /* SceneDelegate.swift */; };
-		5272849D2465F98E004E24AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272849C2465F98E004E24AA /* ViewController.swift */; };
 		527284A02465F98E004E24AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5272849E2465F98E004E24AA /* Main.storyboard */; };
 		527284A32465F98E004E24AA /* WaterMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 527284A12465F98E004E24AA /* WaterMe.xcdatamodeld */; };
 		527284A52465F98F004E24AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527284A42465F98F004E24AA /* Assets.xcassets */; };
@@ -38,10 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5225BCB3246B44460074C0BD /* WaterPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterPoint.swift; sourceTree = "<group>"; };
+		5225BCB7246B542C0074C0BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		527284952465F98E004E24AA /* WaterMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		527284982465F98E004E24AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5272849A2465F98E004E24AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5272849C2465F98E004E24AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5272849F2465F98E004E24AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		527284A22465F98E004E24AA /* WaterMe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WaterMe.xcdatamodel; sourceTree = "<group>"; };
 		527284A42465F98F004E24AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,8 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				527284982465F98E004E24AA /* AppDelegate.swift */,
+				5225BCB7246B542C0074C0BD /* ViewController.swift */,
 				5272849A2465F98E004E24AA /* SceneDelegate.swift */,
-				5272849C2465F98E004E24AA /* ViewController.swift */,
+				5225BCB3246B44460074C0BD /* WaterPoint.swift */,
 				5272849E2465F98E004E24AA /* Main.storyboard */,
 				527284A42465F98F004E24AA /* Assets.xcassets */,
 				527284A62465F98F004E24AA /* LaunchScreen.storyboard */,
@@ -270,7 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5272849D2465F98E004E24AA /* ViewController.swift in Sources */,
+				5225BCB8246B542C0074C0BD /* ViewController.swift in Sources */,
+				5225BCB4246B44460074C0BD /* WaterPoint.swift in Sources */,
 				527284A32465F98E004E24AA /* WaterMe.xcdatamodeld in Sources */,
 				527284992465F98E004E24AA /* AppDelegate.swift in Sources */,
 				5272849B2465F98E004E24AA /* SceneDelegate.swift in Sources */,

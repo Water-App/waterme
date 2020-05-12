@@ -10,19 +10,46 @@
         <!--Test-->
         <scene sceneID="HNV-dQ-19r">
             <objects>
-                <viewController title="Test" id="KA3-Y3-woN" sceneMemberID="viewController">
+                <viewController title="Test" id="KA3-Y3-woN" customClass="ViewController" customModule="WaterMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MIF-wI-9g0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Water" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WbO-nG-Bwj">
+                                <rect key="frame" x="108" y="329" width="199" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="waterInput:" destination="MG2-gX-XI9" eventType="editingDidEnd" id="TF0-2F-Sb7"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMt-Ru-0fa" userLabel="Enter">
+                                <rect key="frame" x="175" y="371" width="66" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPress:" destination="MG2-gX-XI9" eventType="touchUpInside" id="hfL-GO-keD"/>
+                                    <action selector="enterWasPressed:" destination="KA3-Y3-woN" eventType="touchUpInside" id="0kg-w0-hma"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="fgD-kv-uja"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="water" id="Ozf-uM-1Uo"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="intakeLabel" destination="WbO-nG-Bwj" id="6Nt-a3-wxl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JfL-0x-ux0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="MG2-gX-XI9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1046" y="194"/>
+            <point key="canvasLocation" x="171" y="22"/>
         </scene>
     </scenes>
     <resources>
