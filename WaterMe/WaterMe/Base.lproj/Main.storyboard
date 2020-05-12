@@ -10,7 +10,7 @@
         <scene sceneID="Ddw-fp-CuQ">
             <objects>
                 <viewControllerPlaceholder storyboardName="home" id="r0Y-FQ-BE9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="gaz-Bb-8cV"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="water" selectedImage="water" id="gaz-Bb-8cV"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6J5-bJ-9iI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -20,7 +20,7 @@
         <scene sceneID="zID-i2-N9g">
             <objects>
                 <viewControllerPlaceholder storyboardName="charts" id="EVc-sa-gAe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Chart" id="Imn-oa-gA9"/>
+                    <tabBarItem key="tabBarItem" title="Chart" image="charts" id="Imn-oa-gA9"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Umz-hw-lNy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,4 +45,8 @@
             <point key="canvasLocation" x="-841" y="241"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="charts" width="30" height="30"/>
+        <image name="water" width="30" height="30"/>
+    </resources>
 </document>
