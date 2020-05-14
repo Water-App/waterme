@@ -7,28 +7,36 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     @IBOutlet weak var intakeLabel: UITextField!
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
-    */
-    @IBAction func enterWasPressed(_ sender: Any) {
-        self.intakeLabel.text = "WORKING!"
+  
+   
+    @IBAction func enterWasPressed(_ sender: Any){
+        
+    
+        let context = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "WaterPoint", in: context)
+        let newWater = NSManagedObject(entity: entity!, insertInto: context)
+        
+        let insert:Int? = Int(intakeLabel.text!)
+        newWater.setValue(insert, forKey: "intake")
+        
+        do
+        {
+            try context.save()
+        }
+        catch
+        {
+            print("help!")
+        }
         
     }
     
