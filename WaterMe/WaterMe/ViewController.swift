@@ -28,6 +28,8 @@ class ViewController: UIViewController {
         
         let insert:Int? = Int(intakeLabel.text!)
         newWater.setValue(insert, forKey: "intake")
+        let d = Date()
+        newWater.setValue(d, forKey: "created")
         
         do
         {
@@ -39,5 +41,4 @@ class ViewController: UIViewController {
         }
         
     }
-    
 }

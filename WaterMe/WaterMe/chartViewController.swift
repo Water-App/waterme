@@ -30,6 +30,7 @@ class chartViewController: UIViewController
             for data in result as! [NSManagedObject]
             {
                 print(data.value(forKey: "intake") as! Int)
+                print(data.value(forKey: "created"))
             }
         }
         catch
