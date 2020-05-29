@@ -29,7 +29,7 @@ class chartViewController: UIViewController
             let result = try context.fetch(request)
             for data in result as! [NSManagedObject]
             {
-                print(data.value(forKey: "intake") as! Int)
+                print(data.value(forKey: "intake") as? Int)
                 print(data.value(forKey: "created"))
             }
         }

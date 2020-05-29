@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         let entity = NSEntityDescription.entity(forEntityName: "WaterPoint", in: context)
         let newWater = NSManagedObject(entity: entity!, insertInto: context)
         
-        let insert:Int? = Int(intakeLabel.text!)
+        let insert:Int! = Int(intakeLabel.text!)
         newWater.setValue(insert, forKey: "intake")
         let d = Date()
         newWater.setValue(d, forKey: "created")
