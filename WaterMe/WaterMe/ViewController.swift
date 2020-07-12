@@ -20,7 +20,7 @@ class ViewController: UIViewController {
   
    
     @IBAction func enterWasPressed(_ sender: Any){
-        //this should delete everything in our core data model
+        // this should delete everything in our core data model
         // save this for some sort of delete button or possible reset
         // this reset all values
         

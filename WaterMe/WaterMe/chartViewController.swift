@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Macaw
 
 class chartViewController: UIViewController
 {
@@ -18,26 +19,27 @@ class chartViewController: UIViewController
     {
         super.viewDidLoad()
             }
-    
+
     override func viewDidAppear(_ animated: Bool) {
-        taskData = [String]()
-        let context = appDelegate.persistentContainer.viewContext
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "WaterPoint")
-        request.returnsObjectsAsFaults = false
-        do
-        {
-            let result = try context.fetch(request)
-            for data in result as! [NSManagedObject]
-            {
-                print(data.value(forKey: "intake") as? Int)
-                print(data.value(forKey: "created"))
-            }
-        }
-        catch
-        {
-            print("Failed")
-        }
         
+//        taskData = [String]()
+//        let context = appDelegate.persistentContainer.viewContext
+//        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "WaterPoint")
+//        request.returnsObjectsAsFaults = false
+//        do
+//        {
+//            let result = try context.fetch(request)
+//            for data in result as! [NSManagedObject]
+//            {
+//                print(data.value(forKey: "intake") as? Int)
+//                print(data.value(forKey: "created"))
+//            }
+//        }
+//        catch
+//        {
+//            print("Failed")
+//        }
+
     }
-    
+
 }
