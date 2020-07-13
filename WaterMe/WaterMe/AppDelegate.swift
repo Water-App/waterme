@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Macaw
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
